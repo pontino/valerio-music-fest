@@ -140,19 +140,20 @@ nav a:hover{
     background-position: center;
 }
 
-#slider span {
+#slider .slider-caption {
+    box-sizing: border-box;
     position: absolute;
-    width:50px;
-    height: 50px;
+    height: 65px;
     color:#FFF;
     background-color: #000;
-    border-radius:50%;
+    padding: 5px;
+    border-radius:10px;
     font-size: 3em;
     text-align: center;
-    line-height: 50px;
     cursor: pointer;
-    top:50%;  
-    margin-top: -25px;
+    bottom: 0;
+    margin-bottom: 30px;
+    margin-left: 30px;
 }
 
 #slider #left {
@@ -167,14 +168,15 @@ nav a:hover{
     left:0;
 }
 
-.rslides_nav{
+.rslides_nav {
     display: block;
     width: 80px;
     height: 80px;
     background: url(https://upload.wikimedia.org/wikipedia/commons/0/05/Red_Arrow_Left.png) center center no-repeat #000;
     background-size: 60%;
     position: absolute;
-    bottom:0;
+    top: 50%;
+    margin-top: -40px;
     z-index: 5;
 }
 
@@ -225,6 +227,12 @@ nav a:hover{
 
 .rslides_here a{
     background: #ff5800;
+}
+
+.slider-caption {
+    margin: 0;
+    padding: 0;
+
 }
 
 @media only screen and (max-width: 800px) {

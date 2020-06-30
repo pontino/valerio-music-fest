@@ -59,8 +59,6 @@ $(document).ready(function(){
     
     
     $("#left").click(function(){
-                
-        
        var immagineAttiva=$("img.attiva");
         
         $("#slider img").each(function(){
@@ -88,15 +86,11 @@ $(document).ready(function(){
     
     
 /* slider */
-    
-    
-    
 
-    
 $("#slider").responsiveSlides({
   auto: true,             // Boolean: Animate automatically, true or false
   speed: 500,            // Integer: Speed of the transition, in milliseconds
-  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+  timeout: 5000,          // Integer: Time between slide transitions, in milliseconds
   pager: true,           // Boolean: Show pager, true or false
   nav: true,             // Boolean: Show navigation, true or false
   random: false,          // Boolean: Randomize the order of the slides, true or false
@@ -108,9 +102,18 @@ $("#slider").responsiveSlides({
   navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
   manualControls: "",     // Selector: Declare custom pager navigation
   namespace: "rslides",   // String: Change the default namespace used
-  before: function(){},   // Function: Before callback
-  after: function(){}     // Function: After callback
+  before: beforeTheSlideAppears,   // Function: Before callback
+  after: afterTheSlideAppears     // Function: After callback
 });
+
+function beforeTheSlideAppears() {
+    $('.slider-caption').css('bottom', -300);
+    $('.slider-caption').animate({ bottom: 0 }, 500);
+}
+
+function afterTheSlideAppears() {
+   // QUESTA FUNZIONE LA LASCIAMO VUOTA PER CHè NON CI SERVE PIU'
+}
 
     
 $(".rslides_tabs a").text("");
