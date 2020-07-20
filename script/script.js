@@ -117,6 +117,14 @@ function afterTheSlideAppears() {
 
     
 $(".rslides_tabs a").text("");
+
+//popup scopridipiu
+
+$(".buttom1").click(function(){
+
+    alert("sono un popup")
+})
+
     
     
 
