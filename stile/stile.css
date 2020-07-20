@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 body{
@@ -12,7 +13,7 @@ body{
     padding-top: 70px;
 }
 
-.box h2{
+.box > h2{
     position: absolute;
     margin:0;
     font-size:4em;
@@ -20,7 +21,6 @@ body{
     top:50%;    
     transform:translate(-50%,-50%);
     text-align: center;
-    font-family: 'Luckiest Guy', cursive;
 }
 
 #home{
@@ -54,6 +54,7 @@ nav ul{
     margin: 0;
     padding: 0;
     list-style: none;
+    width: 100%;
 }
 
 nav ul li{
@@ -70,7 +71,47 @@ nav ul li a{
 }
 
 nav a:hover{
-    color: #777720;
+ 
+}
+
+.social{
+    float: right;
+}
+
+.social a{
+    
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.fa-whatsapp-square{
+    
+    color: #25D366;
+}
+
+.fa-whatsapp-square:hover{
+    
+    color: red;
+}
+
+.fa-twitter-square{
+    
+    color: #1DA1F2
+}
+
+.fa-instagram{
+    
+    color: #3f729b;
+}
+
+.fa-youtube-square{
+    
+    color: #c4302b;
+}
+
+.fab:hover{
+    
+    color: grey;
 }
 
 #tornaSu{
@@ -123,7 +164,7 @@ nav a:hover{
     float: left;
 }
 
-#slider .div-img {
+.div-img {
     /*position: absolute;
     display: block;
     float: left;
@@ -142,8 +183,6 @@ nav a:hover{
     box-sizing: border-box;
     position: absolute;
     height: 65px;
-    color:#FFF;
-    background-color: #000;
     padding: 5px;
     border-radius:10px;
     font-size: 3em;
@@ -170,7 +209,7 @@ nav a:hover{
     display: block;
     width: 80px;
     height: 80px;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/0/05/Red_Arrow_Left.png) center center no-repeat #000;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/0/05/Red_Arrow_Left.png) center center no-repeat;
     background-size: 60%;
     position: absolute;
     top: 50%;
@@ -233,6 +272,43 @@ nav a:hover{
     padding: 0;
 
 }
+
+/*lineup*/
+
+.lineup-container{
+    height: 250px; 
+    padding: 0 50px;
+    margin-bottom: 50px;
+    border-color:  #FFF;
+}
+
+.lineup-text{
+    background-color: #f5f5f5;
+    text-align: center;
+    height: 100%;
+    width: 50%; 
+    float: right;
+}
+
+.lineup-image{
+    height: 100%;
+    width: 50%; 
+    float: left; 
+}
+
+.buttom1{
+    
+    background-color: #ce4141;
+    padding: 10px 20px;
+    border: solid 1px #FFF;
+    border-radius: 8px;
+}
+
+.buttom1:hover {
+    background-color: #f27070;
+}
+
+/*lineup*/
 
 @media only screen and (max-width: 800px) {
     
