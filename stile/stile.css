@@ -23,6 +23,13 @@ body{
     text-align: center;
 }
 
+.box > h1{
+
+    text-align: center;
+    font-size: 3em;
+    color: #ce4141;
+}
+
 #home{
     background: white;
 }
@@ -70,8 +77,8 @@ nav ul li a{
     color:#000;
 }
 
-nav a:hover{
- 
+nav ul li a:hover{
+    color: #454343;
 }
 
 .social{
@@ -249,9 +256,8 @@ nav a:hover{
     padding: 0 10px;
 }
 
-
 .rslides_tabs a{
-    color:red;
+    color:#ce4141;
     display: block;
     width: 15px;
     height: 15px;
@@ -279,11 +285,11 @@ nav a:hover{
     height: 250px; 
     padding: 0 50px;
     margin-bottom: 50px;
-    border-color:  #FFF;
+    border-color:white;
 }
 
 .lineup-text{
-    background-color: #f5f5f5;
+    background-color: white;
     text-align: center;
     height: 100%;
     width: 50%; 

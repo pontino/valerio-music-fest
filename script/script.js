@@ -122,11 +122,7 @@ $(".rslides_tabs a").text("");
 
 $(".buttom1").click(function(){
 
-    alert("sono un popup")
+    alert("Evento")
 })
 
-    
-    
-
-    
 });//.ready
