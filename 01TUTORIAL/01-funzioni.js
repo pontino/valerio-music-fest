@@ -49,3 +49,21 @@ verificaParita(15) // Il numero 15 è dispari
 probabilmente dovrai usare if
 
 */
+
+// Faccio finta di crearmi la funzione jQuery
+function $(parametro) {
+    // faccio varie cose sul parametro
+    return {
+        campo1: 'io sono una string',
+        ready: function(callback) {
+            //eseguo questo codice solo quando il documento è reday
+            console.log('Io sono una function Ready')
+            callback();
+        },
+        click: function() { console.log('Io sono una function click') }
+    };
+}
+
+$(document).ready(function() {
+    console.log('')
+})
