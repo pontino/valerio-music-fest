@@ -1,12 +1,9 @@
 $(document).ready(function(){
-
-    const htmlBody = $("html,body");
-    const tornaSu = $("#tornaSu");
-
+    
     $("nav a").click(function(e){
         e.preventDefault();    
         var distanza=$(this.hash).offset().top;
-        htmlBody.stop().animate({scrollTop:distanza},1000);
+ $("html,body").stop().animate({scrollTop:distanza},1000);
         
     });//$("nav a").click
     
@@ -21,10 +18,11 @@ $(document).ready(function(){
         console.log($(this).scrollTop());
         
         if($(this).scrollTop()>400){
-          tornaSu.stop().animate({bottom:"20px"},500);
+ $("#tornaSu").stop().animate({bottom:"20px"},500);
+            
         }
         else{
-          tornaSu.stop().animate({bottom:"-100px"},500);
+ $("#tornaSu").stop().animate({bottom:"-100px"},500);
         }
 
     });//.scroll
@@ -124,11 +122,7 @@ $(".rslides_tabs a").text("");
 
 $(".buttom1").click(function(){
 
-    alert("sono un popup")
+    alert("Evento")
 })
 
-    
-    
-
-    
 });//.ready
